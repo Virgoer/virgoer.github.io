@@ -2,7 +2,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-<title>Hello Gridea | Hello,Mango</title>
+<title>告别折腾的日子 | Hello,Mango</title>
 <meta name="description" content="Ordinary life,Extraordinary love" />
 <link rel="shortcut icon" href="https://virgoer.github.io/media/images/favicon.ico?v=1582442928080">
 <link rel="stylesheet" href="https://virgoer.github.io/styles/main.css">
@@ -48,32 +48,36 @@
 
       <div class="post animated fadeInDown">
         <div class="post_title">
-          <h2><a>Hello Gridea</a></h2>
-          <span class="date">2018-12-12</span>
+          <h2><a>告别折腾的日子</a></h2>
+          <span class="date">2020-02-23</span>
         </div>
 
               <div class="post_content markdown">
-                <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+                <h2 id="博客">博客</h2>
+<p>现在的社交平台多如牛毛，真正留住人的几乎没有。自己玩博客也有段时间了，一直折腾来折腾去的，以前就打算玩静态博客算了，因为实在太懒得弄数据库那些东西了，真的很麻烦，尤其迁移的时候，弄不好数据还会容易丢失。现在好了，直接放在github上，除非它挂了，否则应该可以一直稳定下去吧。至少10年内没啥大问题。不需要刻意去维护什么。感谢Gridea！</p>
+<h2 id="主题">主题</h2>
+<p>每个玩博客的人必经之路，就像装修房子一样，收拾来收拾去，这个主题是在我用Bitcron写博客时就买过的一款，菜菜的原创主题，后来木木大神复刻了，很简单，很纯粹。木木的这款Puti复刻的有点笼统，小白的我刚用的时候有点不太明白的地方，今天记录一下，主要就是logo的header部分。<br>
+<img src="https://cdn.jsdelivr.net/gh/Virgoer/pic@master/uPic/%E6%88%AA%E5%B1%8F2020-02-2314.52.52.png" alt="预览图" loading="lazy"><br>
+首页左上角的logo原主题是64 * 64px的svg文件，每个人都想修改成自己的啦，于是乎我就打开了Photoshop，后来折腾一番发现，svg需要字体支持，也就是说如果你没有我这样的繁体字，就是普通的字体或者简单的英文，那么你用64 * 64或者100 * 100的svg是最好的办法。<br>
+但是如果你有像我这样的繁体字或者其他奇怪的字体，那么建议你用png的图片格式啦。</p>
+<h2 id="需要做两件事">需要做两件事：</h2>
+<h3 id="改logo路径">改logo路径</h3>
+<p>打开 /Gridea/themes/puti/templates/includes/header.ejs，修改：</p>
+<pre><code>src=&quot;&lt;%= themeConfig.domain %&gt;/media/images/logo.svg&quot;
+</code></pre>
+<p>为</p>
+<pre><code>src=&quot;&lt;%= themeConfig.domain %&gt;/media/images/logo.png&quot;
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/Virgoer/pic@master/uPic/%E6%88%AA%E5%B1%8F2020-02-2315.14.58.png" alt="预览图" loading="lazy"></figure>
+<h3 id="改图片">改图片</h3>
+<p>图片是png的，新建一个300 * 300的透明图片，设计好logo，导出为png。</p>
+<p>OK，路径改好了，图片也好了。但是这个时候上传，会发现图片比原来的要大很多，原因是没有约束logo大小，那么需要在主题文件的 main.less 代码里稍微添加两行：</p>
+<pre><code> .header .site_title_container .site_title a
+ img{width:100px;height:100px;}
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/Virgoer/pic@master/uPic/%E6%88%AA%E5%B1%8F2020-02-2314.35.54.png" alt="预览" loading="lazy"></figure>
+<p>OK，至此结束。保存，同步即可。<br>
+对了，右上角的修改也是在：/Gridea/themes/puti/templates/includes/header.ejs 里，就在修改logo路径代码的下一行。</p>
 
               </div>
 
@@ -81,7 +85,9 @@
               <div class="meta">
                 <div class="info">
                   <span class="field tags"><i class="fa fa-flask"></i>
-                    <a href="https://virgoer.github.io/tag/vhaicoEiH/" class="tag">Gridea</a>
+                    <a href="https://virgoer.github.io/tag/B3VLusxl7/" class="tag">主题</a>
+                  
+                    <a href="https://virgoer.github.io/tag/VLdr7RQ87/" class="tag">博客</a>
                   </span>
                 </div>
               </div>
