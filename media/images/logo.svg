@@ -32,10 +32,10 @@
       .cls-1 {
         font-size: 125px;
         text-anchor: middle;
-        font-family: "Baoli TC";
+        font-family: "Libian TC";
       }
     </style>
   </defs>
-  <text id="雜" class="cls-1" transform="translate(33.178 45.618) scale(0.563)"><tspan x="0">雜</tspan></text>
-  <text id="記" class="cls-1" transform="translate(66.061 98.343) scale(0.563)"><tspan x="0">記</tspan></text>
+  <text id="筆" class="cls-1" transform="translate(28.855 48.632) scale(0.51)"><tspan x="0">筆</tspan></text>
+  <text id="記" class="cls-1" transform="translate(67.732 94.361) scale(0.51)"><tspan x="0">記</tspan></text>
 </svg>
