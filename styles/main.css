@@ -101,6 +101,10 @@ h6 {
   color: #424242;
   float: right;
 }
+.header .site_title_container .site_title a img {
+  width: 100px;
+  height: 100px;
+}
 .header .site_title_container .description .sub_title {
   font-weight: normal !important;
   float: none !important;
