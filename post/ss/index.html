@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 <title>关于梯子的一些记录 | Hello,Mango</title>
 <meta name="description" content="Ordinary life,Extraordinary love" />
-<link rel="shortcut icon" href="https://virgoer.github.io/media/images/favicon.ico?v=1582796749837">
+<link rel="shortcut icon" href="https://virgoer.github.io/media/images/favicon.ico?v=1582797220306">
 <link rel="stylesheet" href="https://virgoer.github.io/styles/main.css">
 <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://virgoer.github.io/media/js/bigfoot.min.js"></script>
@@ -57,24 +57,24 @@
 <p>去年年初自己搭过梯子，openvz的框架，所以超售严重，好在不贵。后来自己也在一些机场订购过服务，优点是节点多，有问题客服解决，适合流量不大不想折腾的用户。后来自己需求大了，发现机场的流量不够，加流量的话性价比不高，所以把目光转向自己搭梯子。<br>
 一个月前看到老牌vps商家vultr在搞活动，新用户注册送25刀。用每个月3.5刀的那款，有500g流量，也是比大部分机场够用了，关键是还有送的25刀给你用，意味着你花3.5刀可以用将近10来个月，购买后里面还有分享送钱的活动，大概有两三刀吧好像。不过最近vu的速度有点跌落，不知道是不是用的人太多的缘故，但是竟然可以看Netflix，Dallas的节点。我的vu目前只做备用。<br>
 说说我目前用的主力，AWS，世界上数一数二的云服务商，我用的是lightsail产品。电信移动用新加坡和日本的速度都很不错，下载基本可以满速。<br>
-本文只作为自己搭梯子一个备忘录。<br>
-##背景：<br>
-Mac自带终端，aws和vultr都选用的Centos7，脚本是ss不是ssr，ios用的quantumult，shadowrocket，pharos。安卓用的shadowsocks，surfboard。Mac用的shadowsocks，clashX。<br>
-##连接Vultr：<br>
-打开终端：<br>
+本文只作为自己搭梯子一个备忘录。</p>
+<h2 id="背景">背景：</h2>
+<p>Mac自带终端，aws和vultr都选用的Centos7，脚本是ss不是ssr，ios用的quantumult，shadowrocket，pharos。安卓用的shadowsocks，surfboard。Mac用的shadowsocks，clashX。</p>
+<h2 id="连接vultr">连接Vultr：</h2>
+<p>打开终端：<br>
 <code>ssh root@ip</code><br>
 如果出现「WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!」这样的错误提示，可以输入<code>ssh-keygen -R ip</code> 接着就是Yes搞定。这个就是删除之前已经存储认证的ip地址。<br>
-因为已经是root权限登录了，所以直接安装梯子和BBR（加速器）就好了，当然了，有需要的情况下，也可以安装一个统计流量的vnstat。<br>
-##连接AWS<br>
-aws因为需要密钥连接，Windows我不了解，Mac的具体如下，打开终端：<br>
+因为已经是root权限登录了，所以直接安装梯子和BBR（加速器）就好了，当然了，有需要的情况下，也可以安装一个统计流量的vnstat。</p>
+<h2 id="连接aws">连接AWS</h2>
+<p>aws因为需要密钥连接，Windows我不了解，Mac的具体如下，打开终端：<br>
 首先对下载下来的密钥进行授权：<br>
 <code>chmod 600 xxx.pem</code><br>
 其实在Mac上，输入完chmod 600 后，直接把密钥拖进终端即可。<br>
 然后：<code>ssh -i xxxx.pem centos@ip</code><br>
 可能会提示yes/no，直接yes就好了，连接上会发现是centos@ip：这样的开头，如果安装梯子和其他软件，还是需要root权限的，那么直接<code>sudo -i</code>就好了，就会发现是root@ip了。<br>
-到此连接完毕。<br>
-##第一步安装梯子<br>
-vultr的安装很简单，登录到root@ip后：<br>
+到此连接完毕。</p>
+<h2 id="第一步安装梯子">第一步安装梯子</h2>
+<p>vultr的安装很简单，登录到root@ip后：<br>
 依次运行下面的命令，是依次，不是一次性全部复制粘贴。(建议系统使用debian或者centos，安装时提示会有4个版本，建议使用Go或者libev版本，但libev版不能通过修改配置文件来多端口，只能开启多进程，如果你需要多端口请安装Python或Go版）。</p>
 <pre><code>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 
@@ -83,8 +83,8 @@ chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log
 </code></pre>
 <p>安装时，需要输入的有梯子连接密码，端口号，加密方式（我选的7，aes-256-cfb。其他自行尝试。）然后按任意键进行安装。<br>
-有的教程说需要开启vultr的防火墙，但是我的没有开启，一样使用，不知道为啥，也没去折腾。如果不能用的，可以参考此条。<br>
-###常用命令</p>
+有的教程说需要开启vultr的防火墙，但是我的没有开启，一样使用，不知道为啥，也没去折腾。如果不能用的，可以参考此条。</p>
+<h3 id="常用命令">常用命令</h3>
 <pre><code># 卸载
 ./shadowsocks-all.sh uninstall
 
@@ -111,7 +111,7 @@ Shadowsocks-libev 版：
 
 #至于如何编辑保存，请自行搜索vi命令。
 </code></pre>
-<p>##第二步安装BBR</p>
+<h2 id="第二步安装bbr">第二步安装BBR</h2>
 <pre><code>wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
 </code></pre>
 <p>就一行命令，按照命令提示就好了。</p>
@@ -119,8 +119,8 @@ Shadowsocks-libev 版：
 <code>yum install wget</code><br>
 安装好wget后，按照上面第一步和第二步依次进行，一样的操作。另外aws是需要开启防火墙的，在lightsail网页后台，TCP+UDP全部开启。<br>
 aws还有一个问题，就是每次重启（网页上的重启）ip就会变了，虽然这个概率很低，也或者为了刷一个比较好的ip。你需要绑定一个静态ip，这个就不展开说了。</p>
-<p>###安装vnstat<br>
-还有一点，aws没有像vultr那样直观的流量统计图，所以需要（按需）安装一个vnstat：</p>
+<h3 id="安装vnstat">安装vnstat</h3>
+<p>还有一点，aws没有像vultr那样直观的流量统计图，所以需要（按需）安装一个vnstat：</p>
 <pre><code># Debian系统不需要安装epel，直接 apt-get install vnstat 就可以了，但是Debian需要修改网卡，这里不展开说，具体安装方法可以Google。下面的命令是centos7下的安装方法（建议在root用户下）：
 yum -y install epel-release    #安装epel
 yum -y install vnstat    #安装vnstat
@@ -130,7 +130,7 @@ chkconfig vnstat on    #开机启动
 
 # 如果有类似 Error: Unable to read database &quot;/var/lib/vnstat/eth0&quot;.的报错，是权限问题，可以在root用户下用命令 chmod -R 777 /var/lib/vnstat/ 来解决。
 </code></pre>
-<p>###常用命令</p>
+<h3 id="常用命令-2">常用命令</h3>
 <pre><code>vnstat -q, –query query database 季度
            -h, –hours show hours 小时
            -d, –days show days 天
