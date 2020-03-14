@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>我的朋友们 | Hello,Mango</title>
+<title>我的阅读 | Hello,Mango</title>
 <meta name="referrer" content="never" />
 <link rel="shortcut icon" href="https://virgoer.github.io/favicon.ico">
 <link rel="stylesheet" type="text/css" href="https://virgoer.github.io/styles/main.css">
+    <meta name="referrer" content="never">
+    <link rel="stylesheet" href="https://virgoer.github.io/media/js/Bmdb.min.css">
   </head>
   <body>
     <!-- start: #wrapper -->
@@ -54,46 +56,44 @@
   </div>
 </div>
     </header>
-
     <div class="wrapper">
-    <div class="content posts post archive hentry">
-        <h1>我的朋友们</h1>
-        <ul class="archive-list">
+        <div class="content">
+            <div id="posts" class="posts">
+            <!-- start: .articles -->
+            <article class="post hentry format-daily" style="margin-top:3em;">
+                <h1 class="entry-title">
+                   我的阅读
+                </h1>
+                <div class="post-content" style="margin:0 auto;width:80%;padding:1em 0"></div>
+            </article>
             
-            
-            <li class="archive-item links-item">
-                <img class="archive-list-image" src="https://gravatar.loli.net/avatar/"></img>
-                <a href="https://immmmm.com/">木木</a>
-                <span class="archive-item-meta">木木老师</span>
-            </li>
-            
-            
-        </ul>
-        <div class="clear"></div>
-    </div>
+            </div>
 
-        <footer id="footer" class="">
+        </div>
+
+    <footer id="footer" class="">
         <p class="published border-effect">
           ©2020 共 7 篇文章
           <br/>
           Theme <a href="https://immmmm.com/gridea-theme-motify/" target="_blank">「Motify」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
         </p>
     </footer>
+  
+    
+      <script src="https://virgoer.github.io/media/js/jquery.min.js"></script>
+      <script type='text/javascript' src='https://virgoer.github.io/media/js/Bmdb.min.js'></script>
+    
 
-    <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
-
-
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"></script>
-
-
-<script src="https://virgoer.github.io/media/js/jquery.min.js"></script>
-<script src="https://virgoer.github.io/media/js/lately.min.js"></script>
-<script src="https://virgoer.github.io/media/js/waterfall.min.js"></script>
-<script src="https://virgoer.github.io/media/js/slimbox2.min.js"></script>
-<script src="https://virgoer.github.io/media/js/functions.js"></script>
-
+    <script>
+    new Bmdb({
+      type: 'books',
+      selector: '.post-content',
+      secret: 'SWvDiSPfSSAzEOqwmIDf0udPMdLD29TYtCN2eTaig6M9oxdOPJoOtLIQ6ypgdC8b',
+      noMoreText: '没有更多数据了',
+      limit: 30
+    })
+    </script>
 
     </div>
-    <!-- end: #wrapper -->
   </body>
 </html>
