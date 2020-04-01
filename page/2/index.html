@@ -3,23 +3,18 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>感谢！ | Hi,Mango</title>
+<title>Hi,Mango</title>
 <meta name="referrer" content="never" />
 <link rel="shortcut icon" href="https://mangoi.xyz/favicon.ico">
 <link rel="stylesheet" type="text/css" href="https://mangoi.xyz/styles/main.css">
-    <meta name="description" content="感谢木木老师的帮助！
-" />
+    <meta name="description" content="心中有岸。" />
     
-    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+    <link rel="prefetch" href="https://mangoi.xyz/">
     
-    
-    <link rel="prefetch" href="https://mangoi.xyz/post/httpcanary/">
-    
-    
-    <link rel="prefetch" href="https://mangoi.xyz/post/puti/">
     
   </head>
   <body>
+                
     <!-- start: #wrapper -->
     <header id="header" style="background-image:url(https://cdn.jsdelivr.net/gh/virgoer/virgoer.github.io/media/images/custom-headerBgImage.jpg)">
 <div class="header-container">
@@ -65,54 +60,50 @@
   </div>
 </div>
 </header>
+    
 
-    <div class="wrapper single">
+    <div class="wrapper index">
         <div class="content">
-            <div id="posts" class="posts">
             <!-- start: .articles -->
             
-            <article class="post hentry format-chat">
+                
+                                <article class="post hentry format-daily format-work">
                 <header>
                     <time class="date">
                         <i class="fa">
-                            <span class="datetime">2020-03-14</span>
+                            <span class="datetime">2018-10-29</span>
                         </i>
                     </time>
                 </header>
+                <h1 class="entry-title">
+                    <a href="https://mangoi.xyz/post/blog/">博客原委</a>
+                </h1>
                 <div class="post-content">
-                    <a href="https://mangoi.xyz/post/tu-cao/">
-                        
-                            <img src="https://cdn.jsdelivr.net/gh/virgoer/virgoer.github.io/images/avatar.png" class="avatar">
-                        
-                    </a>
                     <div class="post-hentry">
-                        <p>感谢木木老师的帮助！</p>
-
-                        <div class="clear"></div>
+                    
+                        博客
+初次写博客应该是在05年的时候吧，那时候是在新浪博客，后来忘记了用户名和密码，就扔了。搬到了博客大巴，再后来博客大巴好像也倒闭了，就自己折腾wp，再再后来发现用wp时大部分的精力都被消耗在了主题和修改代码上，再加上工作上的事情越来越繁...
+                        <footer class="post-footer"><a href="https://mangoi.xyz/post/blog/#comments" class="more-link">发表评论</a></footer>
+                    
                     </div>
                 </div>
             </article>
+                
             
-
-                <div class="pager">
-                    
-                        <a class="prev" href="https://mangoi.xyz/post/httpcanary/">HttpCanary初次使用-xx输入法</a>
-                    
-                    
-                         <a class="next" href="https://mangoi.xyz/post/puti/">告别折腾的日子</a>
-                    
-                    <div class="clear"></div>
-                </div>
-
-            
-              <div id="comments"></div>
-              <div class="clear"></div>
-            
-            
-            </div>
-
         </div>
 
+                  
+            <div class="paginator pager pagination">
+              <div class="nav">
+                
+                  <a href="https://mangoi.xyz/" class="prev button red">上一页</a>
+                
+                
+                <div class="clear"></div>
+              </div>
+            </div>
+          
+        
             <footer id="footer" class="">
         <p class="published border-effect">
           ©2020 共 10 篇文章
@@ -136,40 +127,5 @@
 
 <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
     </div>
-
-
-<script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
-<script>
-    jQuery(document).ready(function($){
-            new Valine({
-                el: '#comments',
-                recordIP:true,
-                appId: 'i56WyRII1E6odvb7m51PyfHT-MdYXbMMI' ,
-                appKey: '6k6mdkXaXyMpEq59QEbbkjY9',
-                pageSize: 30,
-                placeholder:'既然来了，那就留个痕迹吧~'
-            })
-            jinrishici.load(function(result) {
-                var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
-                    document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
-            });
-            $('.vemoji-btn').text('😀');
-            $("#comments").on('click', 'span.vat',function(){
-                        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
-                        $('textarea#veditor').focus();
-            })
-            if(window.location.hash){
-                    var checkExist = setInterval(function() {
-                        if ($(window.location.hash).length) {
-                            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-                            clearInterval(checkExist);
-                        }
-                    }, 100);
-            }
-    });
-</script>
-
-
   </body>
 </html>
