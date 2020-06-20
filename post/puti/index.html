@@ -82,15 +82,15 @@
                 </h1>
                 <div class="post-content">
                     <div class="post-hentry">
-                        <h2 id="博客">博客</h2>
+                        <h3 id="博客">博客</h3>
 <p>现在的社交平台多如牛毛，真正留住人的几乎没有。自己玩博客也有段时间了，一直折腾来折腾去的，以前就打算玩静态博客算了，因为实在太懒得弄数据库那些东西了，真的很麻烦，尤其迁移的时候，弄不好数据还会容易丢失。现在好了，直接放在github上，除非它挂了，否则应该可以一直稳定下去吧。至少10年内没啥大问题。不需要刻意去维护什么。感谢Gridea！</p>
-<h2 id="主题">主题</h2>
+<h3 id="主题">主题</h3>
 <p>每个玩博客的人必经之路，就像装修房子一样，收拾来收拾去，这个主题是在我用Bitcron写博客时就买过的一款，菜菜的原创主题，后来木木大神复刻了，很简单，很纯粹。木木的这款Puti复刻的有点笼统，小白的我刚用的时候有点不太明白的地方，今天记录一下，主要就是logo的header部分。<br>
 <img src="https://cdn.jsdelivr.net/gh/Virgoer/pic@master/uPic/%E6%88%AA%E5%B1%8F2020-02-2314.52.52.png" alt="预览图" loading="lazy"><br>
 首页左上角的logo原主题是64 * 64px的svg文件，每个人都想修改成自己的啦，于是乎我就打开了Photoshop，后来折腾一番发现，svg需要字体支持，也就是说如果你没有我这样的繁体字，就是普通的字体或者简单的英文，那么你用64 * 64或者100 * 100的svg是最好的办法。<br>
 但是如果你有像我这样的繁体字或者其他奇怪的字体，那么建议你用png的图片格式啦。</p>
-<h2 id="需要做两件事">需要做两件事：</h2>
-<h3 id="改logo路径">改logo路径</h3>
+<h3 id="需要做两件事">需要做两件事：</h3>
+<h4 id="改logo路径">改logo路径</h4>
 <p>打开 /Gridea/themes/puti/templates/includes/header.ejs，修改：</p>
 <pre><code>src=&quot;&lt;%= themeConfig.domain %&gt;/media/images/logo.svg&quot;
 </code></pre>

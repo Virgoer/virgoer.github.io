@@ -87,14 +87,14 @@
 一个月前看到老牌vps商家vultr在搞活动，新用户注册送25刀。用每个月3.5刀的那款，有500g流量，也是比大部分机场够用了，关键是还有送的25刀给你用，意味着你花3.5刀可以用将近10来个月，购买后里面还有分享送钱的活动，大概有两三刀吧好像。不过最近vu的速度有点跌落，不知道是不是用的人太多的缘故，但是竟然可以看Netflix，Dallas的节点。我的vu目前只做备用。<br>
 说说我目前用的主力，AWS，世界上数一数二的云服务商，我用的是lightsail产品。电信移动用新加坡和日本的速度都很不错，下载基本可以满速。<br>
 本文只作为自己搭梯子一个备忘录。</p>
-<h2 id="背景">背景：</h2>
+<h3 id="背景">背景：</h3>
 <p>Mac自带终端，aws和vultr都选用的Centos7，脚本是ss不是ssr，ios用的quantumult，shadowrocket，pharos。安卓用的shadowsocks，surfboard。Mac用的shadowsocks，clashX。</p>
-<h2 id="连接vultr">连接Vultr：</h2>
+<h3 id="连接vultr">连接Vultr：</h3>
 <p>打开终端：<br>
 <code>ssh root@ip</code><br>
 如果出现「WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!」这样的错误提示，可以输入<code>ssh-keygen -R ip</code> 接着就是Yes搞定。这个就是删除之前已经存储认证的ip地址。<br>
 因为已经是root权限登录了，所以直接安装梯子和BBR（加速器）就好了，当然了，有需要的情况下，也可以安装一个统计流量的vnstat。</p>
-<h2 id="连接aws">连接AWS</h2>
+<h3 id="连接aws">连接AWS</h3>
 <p>aws因为需要密钥连接，Windows我不了解，Mac的具体如下，打开终端：<br>
 首先对下载下来的密钥进行授权：<br>
 <code>chmod 600 xxx.pem</code><br>
@@ -102,7 +102,7 @@
 然后：<code>ssh -i xxxx.pem centos@ip</code><br>
 可能会提示yes/no，直接yes就好了，连接上会发现是centos@ip：这样的开头，如果安装梯子和其他软件，还是需要root权限的，那么直接<code>sudo -i</code>就好了，就会发现是root@ip了。<br>
 到此连接完毕。</p>
-<h2 id="第一步安装梯子">第一步安装梯子</h2>
+<h3 id="第一步安装梯子">第一步安装梯子</h3>
 <p>vultr的安装很简单，登录到root@ip后：<br>
 依次运行下面的命令，是依次，不是一次性全部复制粘贴。(建议系统使用debian或者centos，安装时提示会有4个版本，建议使用Go或者libev版本，但libev版不能通过修改配置文件来多端口，只能开启多进程，如果你需要多端口请安装Python或Go版）。</p>
 <pre><code>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
@@ -140,7 +140,7 @@ Shadowsocks-libev 版：
 
 #至于如何编辑保存，请自行搜索vi命令。
 </code></pre>
-<h2 id="第二步安装bbr">第二步安装BBR</h2>
+<h3 id="第二步安装bbr">第二步安装BBR</h3>
 <pre><code>wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh
 </code></pre>
 <p>就一行命令，按照命令提示就好了。</p>
