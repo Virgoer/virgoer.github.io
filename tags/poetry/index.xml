@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poetry on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/poetry/</link>
+    <description>Recent content in Poetry on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Dec 2016 00:31:55 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自讽</title>
+      <link>http://localhost:1313/zh/life/self-irony/</link>
+      <pubDate>Wed, 07 Dec 2016 00:31:55 +0800</pubDate>
+      <guid>http://localhost:1313/zh/life/self-irony/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/self-irony.jpg&#34; alt=&#34;self-irony.jpg&#34; title=&#34;也有觉得自己一无是处的时候&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;你们正向着那天空越飞越高，&lt;br&gt;&#xA;我站在地上，&lt;br&gt;&#xA;看着你们在我眼中越来越小。&lt;br&gt;&#xA;很开心，&lt;br&gt;&#xA;插着腰，&lt;br&gt;&#xA;大笑！&lt;/p&gt;&#xA;&lt;p&gt;自讽。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
