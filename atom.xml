@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-tw">
     <title type="text">LQ.Blog</title>
     <subtitle type="html">這是一休兒之文術网誌！怎麽記住 reuixiy 呢？其實就是「一休兒」之拼音，不過方向是自右往左！</subtitle>
-    <updated>2024-09-23T14:12:51&#43;08:00</updated>
+    <updated>2024-09-24T23:05:06&#43;08:00</updated>
     <id>http://localhost:1313/</id>
     <link rel="alternate" type="text/html" href="http://localhost:1313/" />
     <link rel="self" type="application/atom&#43;xml" href="http://localhost:1313/atom.xml" />
@@ -17,10 +17,90 @@
     <rights>在保留本文作者及本文連結的前提下，非商業用途隨意轉載分享。</rights>
     <generator uri="https://gohugo.io/" version="0.134.2">Hugo</generator>
         <entry>
+            <title type="text">無力的教育</title>
+            <link rel="alternate" type="text/html" href="http://localhost:1313/life/deucation/" />
+            <id>http://localhost:1313/life/deucation/</id>
+            <updated>2024-09-24T23:05:06&#43;08:00</updated>
+            <published>2024-09-21T12:46:06&#43;08:00</published>
+            <author>
+                    <name>reuixiy</name>
+                    <uri>https://io-oi.me/</uri>
+                    <email>reuixiy@gmail.com</email>
+                    </author>
+            <rights>在保留本文作者及本文連結的前提下，非商業用途隨意轉載分享。</rights><summary type="html">&lt;p&gt;-女兒已經上一年級了，開學不到一個月的時間，我跟她的媽媽已經體會到了中式教育的“自我鞭策”，從而深感無力。&lt;/p&gt;……</summary>
+            
+                <content type="html">&lt;p&gt;-女兒已經上一年級了，開學不到一個月的時間，我跟她的媽媽已經體會到了中式教育的“自我鞭策”，從而深感無力。&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;上小學前是這麼想的
+&lt;ol&gt;
+&lt;li&gt;希望她上學開開心心的&lt;/li&gt;
+&lt;li&gt;希望她吃好休息好不用煩惱成績，我們不在意。&lt;/li&gt;
+&lt;li&gt;學習差不多就OK，絕不勉強孩子。&lt;/li&gt;
+&lt;li&gt;興趣班想去就去，不想去就算。......&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;上小學后現實是這樣
+&lt;ol&gt;
+&lt;li&gt;每天7天不到起床晨讀&lt;/li&gt;
+&lt;li&gt;中午不午休，沒有作業但需要練字。&lt;/li&gt;
+&lt;li&gt;每天老師的作業其實不算多，如果僅僅是完成的話能半小時就OK了，可是追求質量的話，需要一個多小時。&lt;/li&gt;
+&lt;li&gt;做完老師的題目還有一些課外拓展。&lt;/li&gt;
+&lt;li&gt;寫字寫不規範媽媽會非常不開心。&lt;/li&gt;
+&lt;li&gt;寫字興趣班絕不允許請假。&lt;/li&gt;
+&lt;li&gt;看各種學習機的資料。&lt;/li&gt;
+&lt;li&gt;各種焦慮，實則來自於對自己的不自信。&lt;/li&gt;
+&lt;li&gt;......&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;我一直在想，作為家長，我們的擔憂是因為什麼？出於對孩子未來更多選擇的負責還是因為擔心給不了孩子更好未來的害怕？中國的教育內捲相當嚴重，幼兒園中班學習十以內加減法是件非常正常的事情，甚至有的已經學會了一百以內的。漢字認識個四五百也不是稀奇的事情。&lt;/p&gt;
+&lt;p&gt;我女兒在幼兒園期間並沒有強制要求她學習那麼多的文化知識，屬於有點放養的方式吧，興趣班也就是普通的畫畫這些。希望她能夠有個審美觀，也能靜心。平日有機會就會帶她去外面旅遊，我們知道一旦上了小學，想出門的機會幾乎就沒有了，最多暑期偶尔出去一下，并且這樣的情況會持續十年之久。&lt;/p&gt;
+&lt;p&gt;昨晚因爲寫字的事情，又被我跟媽媽兩人凶了一下，非常的懊悔。給我的感覺是，在不需要努力的事情上，非常努力，在應該努力的事情上，還沒來得及努力，孩子就已經厭倦了。&lt;/p&gt;
+</content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="http://localhost:1313/life/" term="life\" label="life\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/deucation/" term="deucation" label="deucation" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/helpless/" term="helpless" label="helpless" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">TikTok</title>
             <link rel="alternate" type="text/html" href="http://localhost:1313/tech/tiktok/" />
             <id>http://localhost:1313/tech/tiktok/</id>
-            <updated>2024-09-23T09:06:48&#43;08:00</updated>
+            <updated>2024-09-23T14:39:16&#43;08:00</updated>
             <published>2021-06-01T22:56:00&#43;08:00</published>
             <author>
                     <name>reuixiy</name>
