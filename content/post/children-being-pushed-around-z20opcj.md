@@ -14,7 +14,7 @@ isCJKLanguage: true
 
 title = "無力的教育"  
 date = "2025-05-21T12:46:06+08:00"  
-tags = ["education", "helpless"]  
+tags = ["deucation", "helpless"]  
 slug = "deucation"  
 indent = true
 
